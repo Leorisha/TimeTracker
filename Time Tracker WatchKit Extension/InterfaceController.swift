@@ -12,10 +12,17 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet var timeLabel: WKInterfaceLabel!
+    @IBOutlet var totalTimeLabel: WKInterfaceLabel!
+    @IBOutlet var clockButton: WKInterfaceButton!
+    
+    var clockedIn: Bool = false
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
         // Configure interface objects here.
+        updateUI()
     }
     
     override func willActivate() {
@@ -28,4 +35,13 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    @IBAction func clockButtonTapped() {
+        clockedIn = !clockedIn
+        updateUI()
+    }
+    
+    func updateUI() {
+        clockButton.setTitle(clockedIn ? "Clock-out": "Clock-in")
+        totalTimeLabel.setHidden(!clockedIn)
+    }
 }
