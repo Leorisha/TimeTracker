@@ -22,7 +22,7 @@ class InterfaceController: WKInterfaceController {
         super.awake(withContext: context)
         
         // Configure interface objects here.
-        updateUI()
+        updateUI(with: clockedIn)
     }
     
     override func willActivate() {
@@ -37,11 +37,19 @@ class InterfaceController: WKInterfaceController {
 
     @IBAction func clockButtonTapped() {
         clockedIn = !clockedIn
-        updateUI()
+        updateUI(with: clockedIn)
     }
     
-    func updateUI() {
+    func updateUI(with clockedIn: Bool) {
         clockButton.setTitle(clockedIn ? "Clock-out": "Clock-in")
         totalTimeLabel.setHidden(!clockedIn)
+        
+        timeLabel.setText(getTimeText())
+    }
+    
+    func getTimeText() -> String {
+        var time = clockedIn ? "" : "Today\n"
+        time.append(clockedIn ? "1m:2s" : "3h:4m")
+        return time
     }
 }
