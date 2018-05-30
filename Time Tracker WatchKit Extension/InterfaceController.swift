@@ -20,31 +20,19 @@ class InterfaceController: WKInterfaceController {
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        
-        // Configure interface objects here.
         updateUI(with: clockedIn)
     }
     
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
-    }
-    
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
-    }
-
     @IBAction func clockButtonTapped() {
-        clockedIn = !clockedIn
+        clockedIn ? clockOut() : clockIn()
         updateUI(with: clockedIn)
     }
     
     func updateUI(with clockedIn: Bool) {
         clockButton.setTitle(clockedIn ? "Clock-out": "Clock-in")
         totalTimeLabel.setHidden(!clockedIn)
-        
         timeLabel.setText(getTimeText())
+        clockButton.setBackgroundColor(clockedIn ? .red : .green)
     }
     
     func getTimeText() -> String {
@@ -52,4 +40,32 @@ class InterfaceController: WKInterfaceController {
         time.append(clockedIn ? "1m:2s" : "3h:4m")
         return time
     }
+    
+    func clockIn() {
+        clockedIn = true
+        UserDefaults.standard.set(Date(), forKey: "clocked_in")
+    }
+    
+    func clockOut() {
+        addClockTime(with: clockedIn)
+        clockedIn = false
+        addClockTime(with: clockedIn)
+    }
+    
+    func addClockTime(with clockedIn: Bool) {
+        
+        let timeKey = clockedIn ? "clocked_in" : "clocked_out"
+        let arrayKey = clockedIn ? "clockins" : "clockouts"
+        
+        if let time = UserDefaults.standard.object(forKey: timeKey) as? Date {
+            if var timeArray  = UserDefaults.standard.array(forKey: arrayKey) as? [Date] {
+                timeArray.insert(time, at: 0)
+                UserDefaults.standard.set(timeArray, forKey: arrayKey)
+                print(timeArray)
+            } else {
+                UserDefaults.standard.set([time], forKey: arrayKey)
+            }
+        }
+    }
+    
 }
