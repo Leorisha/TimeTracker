@@ -29,6 +29,20 @@
                             <color key="color" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </separator>
                     </items>
+                    <menu key="menu" id="HUG-0o-R7E">
+                        <items>
+                            <menuItem title="History" icon="info" id="qym-VX-rXS">
+                                <connections>
+                                    <action selector="historyTapped" destination="AgC-eL-Hgc" id="PnG-GD-V4O"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Delete all" icon="trash" id="5bJ-eb-xeb">
+                                <connections>
+                                    <action selector="deleteAllTapped" destination="AgC-eL-Hgc" id="EAt-mF-7BE"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                     <connections>
                         <outlet property="clockButton" destination="PIL-pf-Pzh" id="ENE-4j-J1N"/>
                         <outlet property="timeLabel" destination="uwG-cl-HYq" id="UNa-S1-3i5"/>

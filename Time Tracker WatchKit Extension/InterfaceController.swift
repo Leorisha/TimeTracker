@@ -115,4 +115,14 @@ class InterfaceController: WKInterfaceController {
         return totalTime
     }
     
+    @IBAction func historyTapped() {
+        
+    }
+    @IBAction func deleteAllTapped() {
+        UserDefaults.standard.set(nil, forKey: "clocked_in")
+        UserDefaults.standard.set(nil, forKey: "clockins")
+        UserDefaults.standard.set(nil, forKey: "clockouts")
+        clockedIn = false
+        updateUI(with: false)
+    }
 }
