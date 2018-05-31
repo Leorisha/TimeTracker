@@ -12,10 +12,10 @@
 		C20F1BE520BF242200B2E91A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C20F1BE320BF242200B2E91A /* Main.storyboard */; };
 		C20F1BE720BF242500B2E91A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C20F1BE620BF242500B2E91A /* Assets.xcassets */; };
 		C20F1BEA20BF242500B2E91A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C20F1BE820BF242500B2E91A /* LaunchScreen.storyboard */; };
-		C20F1BEF20BF242500B2E91A /* Time Tracker WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C20F1BEE20BF242500B2E91A /* Time Tracker WatchKit App.app */; };
+		C20F1BEF20BF242500B2E91A /* TimeTracker WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C20F1BEE20BF242500B2E91A /* TimeTracker WatchKit App.app */; };
 		C20F1BF520BF242500B2E91A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C20F1BF320BF242500B2E91A /* Interface.storyboard */; };
 		C20F1BF720BF242600B2E91A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C20F1BF620BF242600B2E91A /* Assets.xcassets */; };
-		C20F1BFE20BF242700B2E91A /* Time Tracker WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C20F1BFD20BF242700B2E91A /* Time Tracker WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C20F1BFE20BF242700B2E91A /* TimeTracker WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C20F1BFD20BF242700B2E91A /* TimeTracker WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C20F1C0320BF242700B2E91A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20F1C0220BF242700B2E91A /* InterfaceController.swift */; };
 		C20F1C0520BF242700B2E91A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20F1C0420BF242700B2E91A /* ExtensionDelegate.swift */; };
 		C20F1C0720BF242800B2E91A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C20F1C0620BF242800B2E91A /* Assets.xcassets */; };
@@ -48,7 +48,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				C20F1BFE20BF242700B2E91A /* Time Tracker WatchKit Extension.appex in Embed App Extensions */,
+				C20F1BFE20BF242700B2E91A /* TimeTracker WatchKit Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,7 +59,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				C20F1BEF20BF242500B2E91A /* Time Tracker WatchKit App.app in Embed Watch Content */,
+				C20F1BEF20BF242500B2E91A /* TimeTracker WatchKit App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,18 +67,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C20F1BDC20BF242200B2E91A /* Time Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C20F1BDC20BF242200B2E91A /* TimeTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C20F1BDF20BF242200B2E91A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C20F1BE120BF242200B2E91A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C20F1BE420BF242200B2E91A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C20F1BE620BF242500B2E91A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C20F1BE920BF242500B2E91A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C20F1BEB20BF242500B2E91A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C20F1BEE20BF242500B2E91A /* Time Tracker WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time Tracker WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C20F1BEE20BF242500B2E91A /* TimeTracker WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TimeTracker WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C20F1BF420BF242500B2E91A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		C20F1BF620BF242600B2E91A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C20F1BF820BF242600B2E91A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C20F1BFD20BF242700B2E91A /* Time Tracker WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Time Tracker WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C20F1BFD20BF242700B2E91A /* TimeTracker WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TimeTracker WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C20F1C0220BF242700B2E91A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		C20F1C0420BF242700B2E91A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		C20F1C0620BF242800B2E91A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -109,9 +109,9 @@
 		C20F1BD320BF242200B2E91A = {
 			isa = PBXGroup;
 			children = (
-				C20F1BDE20BF242200B2E91A /* Time Tracker */,
-				C20F1BF220BF242500B2E91A /* Time Tracker WatchKit App */,
-				C20F1C0120BF242700B2E91A /* Time Tracker WatchKit Extension */,
+				C20F1BDE20BF242200B2E91A /* TimeTracker */,
+				C20F1BF220BF242500B2E91A /* TimeTracker WatchKit App */,
+				C20F1C0120BF242700B2E91A /* TimeTracker WatchKit Extension */,
 				C20F1BDD20BF242200B2E91A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -119,14 +119,14 @@
 		C20F1BDD20BF242200B2E91A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C20F1BDC20BF242200B2E91A /* Time Tracker.app */,
-				C20F1BEE20BF242500B2E91A /* Time Tracker WatchKit App.app */,
-				C20F1BFD20BF242700B2E91A /* Time Tracker WatchKit Extension.appex */,
+				C20F1BDC20BF242200B2E91A /* TimeTracker.app */,
+				C20F1BEE20BF242500B2E91A /* TimeTracker WatchKit App.app */,
+				C20F1BFD20BF242700B2E91A /* TimeTracker WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C20F1BDE20BF242200B2E91A /* Time Tracker */ = {
+		C20F1BDE20BF242200B2E91A /* TimeTracker */ = {
 			isa = PBXGroup;
 			children = (
 				C20F1BDF20BF242200B2E91A /* AppDelegate.swift */,
@@ -136,20 +136,20 @@
 				C20F1BE820BF242500B2E91A /* LaunchScreen.storyboard */,
 				C20F1BEB20BF242500B2E91A /* Info.plist */,
 			);
-			path = "Time Tracker";
+			path = TimeTracker;
 			sourceTree = "<group>";
 		};
-		C20F1BF220BF242500B2E91A /* Time Tracker WatchKit App */ = {
+		C20F1BF220BF242500B2E91A /* TimeTracker WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
 				C20F1BF320BF242500B2E91A /* Interface.storyboard */,
 				C20F1BF620BF242600B2E91A /* Assets.xcassets */,
 				C20F1BF820BF242600B2E91A /* Info.plist */,
 			);
-			path = "Time Tracker WatchKit App";
+			path = "TimeTracker WatchKit App";
 			sourceTree = "<group>";
 		};
-		C20F1C0120BF242700B2E91A /* Time Tracker WatchKit Extension */ = {
+		C20F1C0120BF242700B2E91A /* TimeTracker WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
 				C20F1C0220BF242700B2E91A /* InterfaceController.swift */,
@@ -160,15 +160,15 @@
 				C20F1C0620BF242800B2E91A /* Assets.xcassets */,
 				C20F1C0820BF242800B2E91A /* Info.plist */,
 			);
-			path = "Time Tracker WatchKit Extension";
+			path = "TimeTracker WatchKit Extension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C20F1BDB20BF242200B2E91A /* Time Tracker */ = {
+		C20F1BDB20BF242200B2E91A /* TimeTracker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C20F1C1320BF242800B2E91A /* Build configuration list for PBXNativeTarget "Time Tracker" */;
+			buildConfigurationList = C20F1C1320BF242800B2E91A /* Build configuration list for PBXNativeTarget "TimeTracker" */;
 			buildPhases = (
 				C20F1BD820BF242200B2E91A /* Sources */,
 				C20F1BD920BF242200B2E91A /* Frameworks */,
@@ -180,14 +180,14 @@
 			dependencies = (
 				C20F1BF120BF242500B2E91A /* PBXTargetDependency */,
 			);
-			name = "Time Tracker";
+			name = TimeTracker;
 			productName = "Time Tracker";
-			productReference = C20F1BDC20BF242200B2E91A /* Time Tracker.app */;
+			productReference = C20F1BDC20BF242200B2E91A /* TimeTracker.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C20F1BED20BF242500B2E91A /* Time Tracker WatchKit App */ = {
+		C20F1BED20BF242500B2E91A /* TimeTracker WatchKit App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C20F1C0F20BF242800B2E91A /* Build configuration list for PBXNativeTarget "Time Tracker WatchKit App" */;
+			buildConfigurationList = C20F1C0F20BF242800B2E91A /* Build configuration list for PBXNativeTarget "TimeTracker WatchKit App" */;
 			buildPhases = (
 				C20F1BEC20BF242500B2E91A /* Resources */,
 				C20F1C0E20BF242800B2E91A /* Embed App Extensions */,
@@ -197,14 +197,14 @@
 			dependencies = (
 				C20F1C0020BF242700B2E91A /* PBXTargetDependency */,
 			);
-			name = "Time Tracker WatchKit App";
+			name = "TimeTracker WatchKit App";
 			productName = "Time Tracker WatchKit App";
-			productReference = C20F1BEE20BF242500B2E91A /* Time Tracker WatchKit App.app */;
+			productReference = C20F1BEE20BF242500B2E91A /* TimeTracker WatchKit App.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
-		C20F1BFC20BF242700B2E91A /* Time Tracker WatchKit Extension */ = {
+		C20F1BFC20BF242700B2E91A /* TimeTracker WatchKit Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C20F1C0B20BF242800B2E91A /* Build configuration list for PBXNativeTarget "Time Tracker WatchKit Extension" */;
+			buildConfigurationList = C20F1C0B20BF242800B2E91A /* Build configuration list for PBXNativeTarget "TimeTracker WatchKit Extension" */;
 			buildPhases = (
 				C20F1BF920BF242700B2E91A /* Sources */,
 				C20F1BFA20BF242700B2E91A /* Frameworks */,
@@ -214,9 +214,9 @@
 			);
 			dependencies = (
 			);
-			name = "Time Tracker WatchKit Extension";
+			name = "TimeTracker WatchKit Extension";
 			productName = "Time Tracker WatchKit Extension";
-			productReference = C20F1BFD20BF242700B2E91A /* Time Tracker WatchKit Extension.appex */;
+			productReference = C20F1BFD20BF242700B2E91A /* TimeTracker WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
@@ -240,7 +240,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C20F1BD720BF242200B2E91A /* Build configuration list for PBXProject "Time Tracker" */;
+			buildConfigurationList = C20F1BD720BF242200B2E91A /* Build configuration list for PBXProject "TimeTracker" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -253,9 +253,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C20F1BDB20BF242200B2E91A /* Time Tracker */,
-				C20F1BED20BF242500B2E91A /* Time Tracker WatchKit App */,
-				C20F1BFC20BF242700B2E91A /* Time Tracker WatchKit Extension */,
+				C20F1BDB20BF242200B2E91A /* TimeTracker */,
+				C20F1BED20BF242500B2E91A /* TimeTracker WatchKit App */,
+				C20F1BFC20BF242700B2E91A /* TimeTracker WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -317,12 +317,12 @@
 /* Begin PBXTargetDependency section */
 		C20F1BF120BF242500B2E91A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C20F1BED20BF242500B2E91A /* Time Tracker WatchKit App */;
+			target = C20F1BED20BF242500B2E91A /* TimeTracker WatchKit App */;
 			targetProxy = C20F1BF020BF242500B2E91A /* PBXContainerItemProxy */;
 		};
 		C20F1C0020BF242700B2E91A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C20F1BFC20BF242700B2E91A /* Time Tracker WatchKit Extension */;
+			target = C20F1BFC20BF242700B2E91A /* TimeTracker WatchKit Extension */;
 			targetProxy = C20F1BFF20BF242700B2E91A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -475,13 +475,13 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X82N4CHKBS;
-				INFOPLIST_FILE = "Time Tracker WatchKit Extension/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/TimeTracker WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ananeto.Time-Tracker.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ananeto.TimeTracker.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -497,13 +497,13 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X82N4CHKBS;
-				INFOPLIST_FILE = "Time Tracker WatchKit Extension/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/TimeTracker WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ananeto.Time-Tracker.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ananeto.TimeTracker.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -520,9 +520,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X82N4CHKBS;
-				IBSC_MODULE = Time_Tracker_WatchKit_Extension;
-				INFOPLIST_FILE = "Time Tracker WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ananeto.Time-Tracker.watchkitapp";
+				IBSC_MODULE = TimeTracker_WatchKit_Extension;
+				INFOPLIST_FILE = "$(SRCROOT)/TimeTracker WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ananeto.TimeTracker.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -539,9 +539,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X82N4CHKBS;
-				IBSC_MODULE = Time_Tracker_WatchKit_Extension;
-				INFOPLIST_FILE = "Time Tracker WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ananeto.Time-Tracker.watchkitapp";
+				IBSC_MODULE = TimeTracker_WatchKit_Extension;
+				INFOPLIST_FILE = "$(SRCROOT)/TimeTracker WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ananeto.TimeTracker.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -557,12 +557,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X82N4CHKBS;
-				INFOPLIST_FILE = "Time Tracker/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/TimeTracker WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ananeto.Time-Tracker";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ananeto.TimeTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -575,12 +575,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X82N4CHKBS;
-				INFOPLIST_FILE = "Time Tracker/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/TimeTracker WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ananeto.Time-Tracker";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ananeto.TimeTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -590,7 +590,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C20F1BD720BF242200B2E91A /* Build configuration list for PBXProject "Time Tracker" */ = {
+		C20F1BD720BF242200B2E91A /* Build configuration list for PBXProject "TimeTracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C20F1C0920BF242800B2E91A /* Debug */,
@@ -599,7 +599,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C20F1C0B20BF242800B2E91A /* Build configuration list for PBXNativeTarget "Time Tracker WatchKit Extension" */ = {
+		C20F1C0B20BF242800B2E91A /* Build configuration list for PBXNativeTarget "TimeTracker WatchKit Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C20F1C0C20BF242800B2E91A /* Debug */,
@@ -608,7 +608,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C20F1C0F20BF242800B2E91A /* Build configuration list for PBXNativeTarget "Time Tracker WatchKit App" */ = {
+		C20F1C0F20BF242800B2E91A /* Build configuration list for PBXNativeTarget "TimeTracker WatchKit App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C20F1C1020BF242800B2E91A /* Debug */,
@@ -617,7 +617,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C20F1C1320BF242800B2E91A /* Build configuration list for PBXNativeTarget "Time Tracker" */ = {
+		C20F1C1320BF242800B2E91A /* Build configuration list for PBXNativeTarget "TimeTracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C20F1C1420BF242800B2E91A /* Debug */,
