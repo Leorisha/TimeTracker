@@ -33,7 +33,7 @@
                         <items>
                             <menuItem title="History" icon="info" id="qym-VX-rXS">
                                 <connections>
-                                    <action selector="historyTapped" destination="AgC-eL-Hgc" id="PnG-GD-V4O"/>
+                                    <action selector="historyTapped" destination="AgC-eL-Hgc" id="P6E-hm-NHo"/>
                                 </connections>
                             </menuItem>
                             <menuItem title="Delete all" icon="trash" id="5bJ-eb-xeb">
@@ -50,6 +50,26 @@
                     </connections>
                 </controller>
             </objects>
+        </scene>
+        <!--HistoryInterfaceController-->
+        <scene sceneID="eEL-qv-hcg">
+            <objects>
+                <controller identifier="HistoryInterfaceController" id="n4e-Q6-m3t" customClass="HistoryInterfaceController" customModule="Time_Tracker_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="Wbb-nK-3VK">
+                            <items>
+                                <tableRow id="1J4-ny-u77">
+                                    <group key="rootItem" width="1" alignment="left" id="Mej-eM-QwC"/>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="Wbb-nK-3VK" id="6vh-t0-bS9"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="272" y="288"/>
         </scene>
     </scenes>
 </document>

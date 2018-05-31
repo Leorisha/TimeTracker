@@ -116,8 +116,9 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func historyTapped() {
-        
+        pushController(withName: "HistoryInterfaceController", context: nil)
     }
+    
     @IBAction func deleteAllTapped() {
         UserDefaults.standard.set(nil, forKey: "clocked_in")
         UserDefaults.standard.set(nil, forKey: "clockins")
