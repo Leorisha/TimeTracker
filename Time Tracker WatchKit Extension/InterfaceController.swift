@@ -17,10 +17,24 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet var clockButton: WKInterfaceButton!
     
     var clockedIn: Bool = false
+    var timer: Timer?
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        updateUI(with: clockedIn)
+    }
+    
+    override func willActivate() {
+        
+        if UserDefaults.standard.object(forKey: "clocked_in") != nil {
+            if timer == nil {
+                startClock()
+            }
+            clockedIn = true
+            updateUI(with: true)
+        } else {
+            clockedIn = false
+            updateUI(with: false)
+        }
     }
     
     @IBAction func clockButtonTapped() {
@@ -44,6 +58,7 @@ class InterfaceController: WKInterfaceController {
     
     func clockOut() {
         clockedIn = false
+        timer?.invalidate()
         addClockedTime()
     }
     
@@ -69,7 +84,7 @@ class InterfaceController: WKInterfaceController {
     }
     
     func startClock() {
-        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
             if let clockedInTime = UserDefaults.standard.object(forKey: "clocked_in") as? Date {
                 
                 let timeInterval = Int(Date().timeIntervalSince(clockedInTime))
