@@ -31,14 +31,9 @@ class InterfaceController: WKInterfaceController {
     func updateUI(with clockedIn: Bool) {
         clockButton.setTitle(clockedIn ? "Clock-out": "Clock-in")
         totalTimeLabel.setHidden(!clockedIn)
-        timeLabel.setText(getTimeText())
+        totalTimeLabel.setText("Today: " + getTimeText(for: totalClockedTime()))
+        timeLabel.setText(clockedIn ? getTimeText(for: 0) : "Today: " + getTimeText(for: totalClockedTime()))
         clockButton.setBackgroundColor(clockedIn ? .red : .green)
-    }
-    
-    func getTimeText() -> String {
-        var time = clockedIn ? "" : "Today\n"
-        time.append(getTimeText(for: totalClockedTime()))
-        return time
     }
     
     func clockIn() {
@@ -86,11 +81,22 @@ class InterfaceController: WKInterfaceController {
     
     func getTimeText(for timeInterval: Int) -> String {
         
-        let hours = timeInterval / 3600
-        let minutes = (timeInterval % 3600) / 60
-        let seconds = timeInterval % 60
+        var timeString = ""
         
-        return "\(hours)h \(minutes)m \(seconds)s"
+        let hours = timeInterval / 3600
+        if hours > 0 {
+            timeString += "\(hours)h "
+        }
+        
+        let minutes = (timeInterval % 3600) / 60
+        if minutes > 0 {
+            timeString += "\(minutes)m "
+        }
+        
+        let seconds = timeInterval % 60
+        timeString += "\(seconds)s"
+        
+        return timeString
     }
     
     func totalClockedTime() -> Int {
@@ -106,7 +112,6 @@ class InterfaceController: WKInterfaceController {
             totalTime += time
         }
         
-        print(totalTime)
         return totalTime
     }
     
