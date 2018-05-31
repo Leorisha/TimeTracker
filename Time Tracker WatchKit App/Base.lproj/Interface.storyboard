@@ -58,8 +58,15 @@
                     <items>
                         <table alignment="left" id="Wbb-nK-3VK">
                             <items>
-                                <tableRow id="1J4-ny-u77">
-                                    <group key="rootItem" width="1" alignment="left" id="Mej-eM-QwC"/>
+                                <tableRow identifier="ClockRow" id="1J4-ny-u77" customClass="ClockRow" customModule="Time_Tracker_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="Mej-eM-QwC">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="IjF-UK-OhD"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="clockLabel" destination="IjF-UK-OhD" id="Gin-IE-3q1"/>
+                                    </connections>
                                 </tableRow>
                             </items>
                         </table>

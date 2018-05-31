@@ -17,17 +17,13 @@ class HistoryInterfaceController: WKInterfaceController {
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-        // Configure interface objects here.
-    }
-
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
-    }
-
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
+        table.setNumberOfRows(10, withRowType: "ClockRow")
+        
+        for i in 0...9 {
+            if let row = table.rowController(at: i) as? ClockRow {
+                row.clockLabel.setText("\(i)")
+            }
+        }
     }
 
 }
