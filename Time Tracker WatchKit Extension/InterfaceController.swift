@@ -37,35 +37,77 @@ class InterfaceController: WKInterfaceController {
     
     func getTimeText() -> String {
         var time = clockedIn ? "" : "Today\n"
-        time.append(clockedIn ? "1m:2s" : "3h:4m")
+        time.append(getTimeText(for: totalClockedTime()))
         return time
     }
     
     func clockIn() {
         clockedIn = true
         UserDefaults.standard.set(Date(), forKey: "clocked_in")
+        startClock()
     }
     
     func clockOut() {
-        addClockTime(with: clockedIn)
         clockedIn = false
-        addClockTime(with: clockedIn)
+        addClockedTime()
     }
     
-    func addClockTime(with clockedIn: Bool) {
-        
-        let timeKey = clockedIn ? "clocked_in" : "clocked_out"
-        let arrayKey = clockedIn ? "clockins" : "clockouts"
-        
-        if let time = UserDefaults.standard.object(forKey: timeKey) as? Date {
-            if var timeArray  = UserDefaults.standard.array(forKey: arrayKey) as? [Date] {
-                timeArray.insert(time, at: 0)
-                UserDefaults.standard.set(timeArray, forKey: arrayKey)
-                print(timeArray)
+    func addClockedTime() {
+        if let clockedIn = UserDefaults.standard.object(forKey: "clocked_in") as? Date {
+            
+            if var clockins  = UserDefaults.standard.array(forKey: "clockins") as? [Date] {
+                clockins.insert(clockedIn, at: 0)
+                UserDefaults.standard.set(clockins, forKey: "clockins")
             } else {
-                UserDefaults.standard.set([time], forKey: arrayKey)
+                UserDefaults.standard.set([clockedIn], forKey: "clockins")
+            }
+            
+            if var clockouts  = UserDefaults.standard.array(forKey: "clockouts") as? [Date] {
+                clockouts.insert(Date(), at: 0)
+                UserDefaults.standard.set(clockouts, forKey: "clockouts")
+            } else {
+                UserDefaults.standard.set([Date()], forKey: "clockouts")
+            }
+            
+            UserDefaults.standard.set(nil, forKey: "clocked_in")
+        }
+    }
+    
+    func startClock() {
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
+            if let clockedInTime = UserDefaults.standard.object(forKey: "clocked_in") as? Date {
+                
+                let timeInterval = Int(Date().timeIntervalSince(clockedInTime))
+                self.timeLabel.setText(self.getTimeText(for: timeInterval))
+                self.totalTimeLabel.setText("Today: " + self.getTimeText(for: timeInterval + self.totalClockedTime()))
             }
         }
+    }
+    
+    func getTimeText(for timeInterval: Int) -> String {
+        
+        let hours = timeInterval / 3600
+        let minutes = (timeInterval % 3600) / 60
+        let seconds = timeInterval % 60
+        
+        return "\(hours)h \(minutes)m \(seconds)s"
+    }
+    
+    func totalClockedTime() -> Int {
+        
+        var totalTime = 0
+        
+        guard let clockins  = UserDefaults.standard.array(forKey: "clockins") as? [Date], let clockouts = UserDefaults.standard.array(forKey: "clockouts") as? [Date] else {
+                return totalTime
+        }
+        
+        for i in 0...clockins.count-1 {
+            let time = Int(clockouts[i].timeIntervalSince(clockins[i]))
+            totalTime += time
+        }
+        
+        print(totalTime)
+        return totalTime
     }
     
 }
