@@ -50,6 +50,29 @@
                     </connections>
                 </controller>
             </objects>
+            <point key="canvasLocation" x="22" y="43"/>
+        </scene>
+        <!--DetailInterfaceController-->
+        <scene sceneID="xgK-SO-r3E">
+            <objects>
+                <controller identifier="DetailInterfaceController" id="dlx-te-mKF" customClass="DetailInterfaceController" customModule="Time_Tracker_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Clock-In" id="06M-eH-Q9h">
+                            <fontDescription key="font" type="system" weight="semibold" pointSize="16"/>
+                        </label>
+                        <label alignment="left" text="May 5th, 11:20AM" id="iKQ-RC-Ian"/>
+                        <label alignment="left" text="Clock-out" id="2Zn-5Y-ljX">
+                            <fontDescription key="font" type="system" weight="semibold" pointSize="16"/>
+                        </label>
+                        <label alignment="left" text="May 5th, 11:25AM" id="IOY-EJ-Ace"/>
+                    </items>
+                    <connections>
+                        <outlet property="clockInLabel" destination="iKQ-RC-Ian" id="6H0-9M-hpN"/>
+                        <outlet property="clockOutLabel" destination="IOY-EJ-Ace" id="PTd-B2-CXn"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="34" y="344"/>
         </scene>
         <!--HistoryInterfaceController-->
         <scene sceneID="eEL-qv-hcg">
@@ -76,7 +99,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="272" y="288"/>
+            <point key="canvasLocation" x="287" y="43"/>
         </scene>
     </scenes>
 </document>

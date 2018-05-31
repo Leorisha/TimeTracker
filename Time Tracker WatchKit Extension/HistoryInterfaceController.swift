@@ -14,12 +14,25 @@ class HistoryInterfaceController: WKInterfaceController {
 
     @IBOutlet var table: WKInterfaceTable!
     
+    var clockIns: [Date] = []
+    var clockOuts: [Date] = []
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        
-        guard let clockIns = UserDefaults.standard.array(forKey: "clockins") as? [Date], let clockOuts = UserDefaults.standard.array(forKey: "clockouts") as? [Date] else { return }
-        
+    
+        fillDatasource()
         setupTable(with: clockIns, and: clockOuts)
+    }
+    
+    func fillDatasource() {
+        
+        if let clockIns = UserDefaults.standard.array(forKey: "clockins") as? [Date] {
+            self.clockIns = clockIns
+        }
+        
+        if let clockOuts = UserDefaults.standard.array(forKey: "clockouts") as? [Date] {
+            self.clockOuts = clockOuts
+        }
     }
     
     func setupTable(with clockIns: [Date], and clockOuts: [Date]) {
@@ -52,6 +65,10 @@ class HistoryInterfaceController: WKInterfaceController {
         timeString += "\(seconds)s"
         
         return timeString
+    }
+    
+    override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
+        pushController(withName: "DetailInterfaceController", context: [clockIns[rowIndex], clockOuts[rowIndex]])
     }
 
 }

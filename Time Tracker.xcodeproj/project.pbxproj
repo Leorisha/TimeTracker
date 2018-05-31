@@ -21,6 +21,7 @@
 		C20F1C0720BF242800B2E91A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C20F1C0620BF242800B2E91A /* Assets.xcassets */; };
 		C20F1C1720C08E8000B2E91A /* HistoryInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20F1C1620C08E8000B2E91A /* HistoryInterfaceController.swift */; };
 		C20F1C1920C0901200B2E91A /* ClockRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20F1C1820C0901200B2E91A /* ClockRow.swift */; };
+		C20F1C1B20C0951D00B2E91A /* DetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20F1C1A20C0951D00B2E91A /* DetailInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		C20F1C0820BF242800B2E91A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C20F1C1620C08E8000B2E91A /* HistoryInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryInterfaceController.swift; sourceTree = "<group>"; };
 		C20F1C1820C0901200B2E91A /* ClockRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockRow.swift; sourceTree = "<group>"; };
+		C20F1C1A20C0951D00B2E91A /* DetailInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 			children = (
 				C20F1C0220BF242700B2E91A /* InterfaceController.swift */,
 				C20F1C1620C08E8000B2E91A /* HistoryInterfaceController.swift */,
+				C20F1C1A20C0951D00B2E91A /* DetailInterfaceController.swift */,
 				C20F1C0420BF242700B2E91A /* ExtensionDelegate.swift */,
 				C20F1C1820C0901200B2E91A /* ClockRow.swift */,
 				C20F1C0620BF242800B2E91A /* Assets.xcassets */,
@@ -305,6 +308,7 @@
 				C20F1C1920C0901200B2E91A /* ClockRow.swift in Sources */,
 				C20F1C0320BF242700B2E91A /* InterfaceController.swift in Sources */,
 				C20F1C1720C08E8000B2E91A /* HistoryInterfaceController.swift in Sources */,
+				C20F1C1B20C0951D00B2E91A /* DetailInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
